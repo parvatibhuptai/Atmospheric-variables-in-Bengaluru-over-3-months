@@ -19,7 +19,7 @@ Atmospheric datasets often contain interrelated variables (e.g., temperature, so
   * **Standardization:** Applied Z-score normalization (`scale()`) to ensure equal contribution across varying units like Celsius and hPa.
   * **PCA Execution:** Extracted orthogonal principal components using the `prcomp()` function and visualized the variable relationships using Scree plots, scatter plots, and Biplots.
 
-## 📊 Key Findings
+## Key Findings
 The PCA successfully simplified the 19 original variables into 3 primary dimensions, accounting for 64.7% of the total dataset information:
 * **PC1 (Solar Radiation Factor - 40.7% variance):** Driven by high positive loadings for GHI, DNI, DHI, and Temperature, representing overall solar energy intensity.
 * **PC2 (Moisture & Atmospheric Factor - 14.8% variance):** Represented by Precipitable Water, Dew Point, and Aerosol Optical Depth, indicating air composition and moisture levels.
